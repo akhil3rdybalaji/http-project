@@ -1,0 +1,35 @@
+<h1>Welcome to the login page</h1>
+
+<div>
+  <label for="q1">Id</label>
+  <input type="text" id="q1" [(ngModel)]="formdata.id" />
+</div>
+<button (click)="updateData()">Submit</button>
+
+<table class="table" border="2px">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Address</th>
+  
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let n of customerList">
+        <th scope="row">{{ n.id }}</th>
+        <td>{{ n.names }}</td>
+        <td>{{ n.email }}</td>
+        <td>{{ n.PhoneNumber }}</td>
+        <td>{{ n.Address }}</td>
+  
+  
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  

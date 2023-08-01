@@ -1,0 +1,16 @@
+<!-- <button (click)="getDataFromServer()">GET DATA</button> -->
+<table border ="2px">
+<tr>
+    <th>id</th>
+    <th>names</th>
+    <th>email</th>
+</tr>
+<tr *ngFor ="let n of data">
+    <td>{{n.id}}</td>
+    <td>{{n.names}}</td>
+    <td>{{n.email}}</td>
+    <td>{{ n.PhoneNumber }}</td>
+    <td>{{ n.Address }}</td>
+
+</tr>
+</table>
